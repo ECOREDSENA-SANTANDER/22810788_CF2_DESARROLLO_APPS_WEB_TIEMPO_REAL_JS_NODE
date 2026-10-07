@@ -9,12 +9,12 @@
 
       .row.justify-content-center.mb-5.p-0.align-items-center.bg-color-2(data-aos='fade-right')
         .col-sm-12.col-lg-4.d-none.d-lg-block.p-0
-          img(src='@/assets/curso/temas/t2/1.png', alt='')
+          img(src='@/assets/curso/temas/t2/1.png')
         .col-sm-12.col-lg-8.p-0
           .p-4
             .row.justify-content-center.mb-0
               .col-sm-12.col-lg-2.d-none.d-lg-block
-                img(src='@/assets/curso/temas/t2/2.svg', alt='')
+                img(src='@/assets/curso/temas/t2/2.svg')
               .col-sm-12.col-lg-8
                   p.mb-0 Con el entorno configurado y las dependencias instaladas, el siguiente paso es levantar el servidor, la columna estructural de toda aplicación web en tiempo real. El servidor es el ente que permanece activo, escucha las peticiones de los clientes y coordina el flujo de información entre ellos.
 
@@ -26,7 +26,7 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 Arquitectura básica de un servidor Node.js con Express
 
@@ -48,9 +48,9 @@
                 p.mb-4 bash
                 .mb-0.d-flex #[.text-cus-3 npm install]&nbsp;express socket.io
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img(src='@/assets/curso/temas/t2/5.svg', alt='')
+                img(src='@/assets/curso/temas/t2/5.svg')
         .col-sm-12.col-lg-6.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t2/4.png', alt='')
+          img(src='@/assets/curso/temas/t2/4.png')
 
       p.mb-5(data-aos='fade-right') A continuación, se crea el archivo #[b.text-cus-7 index.js], el punto de entrada de la aplicación:
 
@@ -69,7 +69,7 @@
                       .mb-1.d-flex #[.text-cus-4 const] &nbsp; express =   &nbsp;#[.text-cus-3 require]('#[.text-cus-2  express]');
                       .mb-0.d-flex #[.text-cus-4 const] &nbsp; http =  &nbsp; #[.text-cus-3 require]('#[.text-cus-2  http]');
                   .col-sm-12.col-lg-5.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/6.png', alt='')
+                    img(src='@/assets/curso/temas/t2/6.png')
 
             .row.ml-cus-4(titulo="")
               .col-sm-12.col-lg-12
@@ -82,7 +82,7 @@
                       .mb-0.d-flex #[.text-cus-4 const] &nbsp; app =   &nbsp;#[.text-cus-3 express]();
                       .mb-0.d-flex.no-wrap.text-cus-8  #[.text-cus-4 const]&nbsp;servidor = http.#[.text-cus-3 createServer](app);
                   .col-sm-12.col-lg-4.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/7.png', alt='')
+                    img(src='@/assets/curso/temas/t2/7.png')
 
             .row.ml-cus-4(titulo="")
               .col-sm-12.col-lg-12
@@ -96,7 +96,7 @@
                       .mb-1.d-flex.ml-cus-5.no-wrap.text-cus-8    res.#[.text-cus-3 send]('#[.text-cus-2 Servidor en línea y esperando conexiones.]');
                       .mb-0.d-flex.text-cus-8  });
                   .col-sm-12.col-xl-5.d-none.d-xl-block
-                    img(src='@/assets/curso/temas/t2/8.png', alt='')
+                    img(src='@/assets/curso/temas/t2/8.png')
 
 
             .row.ml-cus-4(titulo="")
@@ -114,7 +114,7 @@
                             | #[.d-flex.ml-cus-5 #[.text-cus-5 console].#[.text-cus-3 log](`#[.text-cus-2 Servidor ejecutándose en http://localhost]:${#[.text-cus-6 PUERTO]}`);]
                             | #[.d-flex }); ]
                   .col-sm-12.col-lg-3.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/9.png', alt='')
+                    img(src='@/assets/curso/temas/t2/9.png')
 
 
 
@@ -182,7 +182,7 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 El proceso de conexión                   
       
@@ -191,21 +191,21 @@
           LineaTiempoE.color-acento-botones
             .row(titulo="Momento 1")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/13.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/13.svg')
               .col-sm-12.col-lg-9
                 h3 La petición inicial 
                 p.mb-0 El navegador realiza una petición HTTP normal, pero incluye una cabecera especial solicitando un #[i upgrade] (mejora de conexión). Es como solicitar pasar de una carta postal a una llamada telefónica directa.
                                    
             .row(titulo="Momento 2")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/14.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/14.svg')
               .col-sm-12.col-lg-9
                 h3 La aceptación del servidor  
                 p.mb-0 Si el servidor está configurado para WebSockets, acepta la solicitud y confirma el #[i upgrade]. A partir de este instante la conexión HTTP se transforma en un túnel TCP abierto de forma permanente.
             
             .row(titulo="Momento 3")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/15.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/15.svg')
               .col-sm-12.col-lg-9
                 h3 El canal activo 
                 p.mb-0 El canal queda abierto indefinidamente. El servidor adquiere la capacidad de enviar (#[i push]) datos al cliente en el momento exacto en que ocurren, sin que el cliente tenga que preguntar. Este es el principio de la comunicación en tiempo real.
@@ -218,7 +218,7 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 Integración de #[i sockets] al servidor                   
       p.mb-3(data-aos='fade-right') Se modifica el archivo #[b.text-cus-7 index.js] para agregar la capa de WebSockets mediante socket.io.
@@ -255,7 +255,7 @@
                   | #[.mb-1.d-flex });]
            
           .col-sm-12.col-lg-4.col-xl-5.d-none.d-lg-block
-            img(src='@/assets/curso/temas/t2/11.png', alt='')
+            img(src='@/assets/curso/temas/t2/11.png')
       
 
 
@@ -308,7 +308,7 @@
                     td.text-cus-7.fw-bold io.emit()
                     td A todos los clientes conectados sin excepción
         .col-sm-12.col-lg-4.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t2/12.png', alt='')
+          img(src='@/assets/curso/temas/t2/12.png')
       
            
   </template>

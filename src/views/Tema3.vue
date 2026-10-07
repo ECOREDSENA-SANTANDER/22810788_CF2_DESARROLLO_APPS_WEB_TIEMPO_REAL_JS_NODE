@@ -25,11 +25,11 @@
           .cajon.color-acento-contenido.p-4.mb-0
             .row.justify-content-center.mb-0.p-0.m-0
               .col-sm-12.col-lg-5
-                img(src='@/assets/curso/temas/t3/3.svg', alt='')
+                img(src='@/assets/curso/temas/t3/3.svg')
               .col-sm-12.col-lg-4.d-none.d-lg-block
-                img(src='@/assets/curso/temas/t3/4.svg', alt='')
+                img(src='@/assets/curso/temas/t3/4.svg')
         .col-sm-12.col-lg-6.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t3/2.png', alt='')
+          img(src='@/assets/curso/temas/t3/2.png')
       p.mb-5(data-aos='fade-right') La carpeta #[b.text-cus-7 public/] contendrá el archivo HTML que se entregará al navegador. El archivo #[b.text-cus-7 index.js] será el servidor. Esta separación entre código del servidor y archivos del cliente es una convención estándar en proyectos Node.js; mezclarlos en la misma carpeta raíz dificulta el mantenimiento y la escalabilidad del proyecto.
 
 
@@ -46,29 +46,29 @@
           .row.justify-content-center.align-items-center
             .col-sm-12.col-lg-5
                 .cajon.color-acento-contenido.p-5.mb-0
-                  img(src='@/assets/curso/temas/t3/6.svg', alt='')
+                  img(src='@/assets/curso/temas/t3/6.svg')
 
             .col-sm-12.col-lg-6.d-none.d-lg-block
-              img(src='@/assets/curso/temas/t3/5.png', alt='')
+              img(src='@/assets/curso/temas/t3/5.png')
 
         .py-3.py-md-4(titulo="Gestión de eventos de dibujo en tiempo real")
           p.mb-5 El evento #[b.text-cus-7 'dibujar'] recibe del cliente las coordenadas del trazo y las reenvía a todos los demás participantes usando #[b.text-cus-7 socket.broadcast.emit()]. Se usa #[b.text-cus-7 broadcast] en lugar de #[b.text-cus-7 io.emit()] deliberadamente: el cliente que dibuja ya ve su propio trazo en pantalla de forma local, por lo que enviárselo de vuelta generaría una duplicación visual. Este es un ejemplo concreto de por qué la distinción entre métodos de emisión tiene consecuencias directas en el comportamiento de la aplicación.
           .row.justify-content-center.align-items-center
             .col-sm-12.col-lg-5
                 .cajon.color-acento-contenido.p-5.mb-0
-                  img(src='@/assets/curso/temas/t3/7.svg', alt='')
+                  img(src='@/assets/curso/temas/t3/7.svg')
 
             .col-sm-12.col-lg-6.d-none.d-lg-block
-              img(src='@/assets/curso/temas/t3/8.png', alt='')
+              img(src='@/assets/curso/temas/t3/8.png')
 
         .py-3.py-md-4(titulo="Inicio del servidor")
           .row.justify-content-center.align-items-center
             .col-sm-12.col-lg-8.p-5
                 .cajon.color-acento-contenido.p-5.mb-0
-                  img(src='@/assets/curso/temas/t3/9.svg', alt='')
+                  img(src='@/assets/curso/temas/t3/9.svg')
 
             .col-sm-12.col-lg-4.d-none.d-lg-block
-              img(src='@/assets/curso/temas/t3/10.png', alt='')
+              img(src='@/assets/curso/temas/t3/10.png')
 
       Separador
       #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -83,24 +83,24 @@
             p.mb-2 html
             pre.mb-0
               code.language-html(v-html="highlightedClientHtml")
-            //img(src='@/assets/curso/temas/t3/11.svg', alt='')
+            //img(src='@/assets/curso/temas/t3/11.svg')
       
       AcordionA(tipo="a" clase-tarjeta="tarjeta bg-color-7")(data-aos='fade-right')
         .row.align-items-center(titulo="El elemento canvas y el contexto 2D")
           .col-sm-12.col-lg-7.p-5
             p.mb-0 El elemento HTML #[b.text-cus-7 canvas] es una superficie de dibujo en píxeles controlada completamente mediante JavaScript. El método #[b.text-cus-7 getContext('2d')] entrega el conjunto de herramientas de dibujo: trazos, figuras, colores y transformaciones. Sin obtener este contexto, el #[b.text-cus-7 canvas] es únicamente un rectángulo vacío sin capacidad de renderizar nada.
           .col-sm-12.col-lg-5.d-none.d-lg-block
-            img(src='@/assets/curso/temas/t3/12.png', alt='')
+            img(src='@/assets/curso/temas/t3/12.png')
         .row.align-items-center(titulo="La función dibujarLinea y el parámetro emitir ")
           .col-sm-12.col-lg-7.p-5
             p.mb-0 Esta función cumple una doble responsabilidad: dibuja el trazo localmente en el #[b.text-cus-7 canvas] y, si el parámetro #[b.text-cus-7 emitir] es #[b.text-cus-7 true], envía las coordenadas al servidor mediante #[b.text-cus-7  socket.emit()]. Cuando el servidor reenvía el evento a los demás clientes y estos lo reciben por #[b.text-cus-7  socket.on('dibujar')], llaman a la misma función con #[b.text-cus-7 emitir] en #[b.text-cus-7 false], evitando así un ciclo infinito donde cada cliente reenviaría indefinidamente los trazos recibidos.
           .col-sm-12.col-lg-5.d-none.d-lg-block
-            img(src='@/assets/curso/temas/t3/13.png', alt='')
+            img(src='@/assets/curso/temas/t3/13.png')
         .row.align-items-center(titulo="Los eventos del ratón y el control del estado de dibujo ")
           .col-sm-12.col-lg-7.p-5
             p.mb-0 La variable #[b.text-cus-7 dibujando] actúa como un interruptor: se activa con #[b.text-cus-7 mousedown] y se desactiva con #[b.text-cus-7 mouseup] o #[b.text-cus-7 mouseleave]. Sin el evento #[b.text-cus-7 mouseleave], al arrastrar el cursor fuera del #[b.text-cus-7 canvas] y volver a entrar, el servidor continuaría recibiendo coordenadas de dibujo, aunque el usuario no tuviera el botón presionado, generando trazos involuntarios que degradan la experiencia de todos los participantes conectados.
           .col-sm-12.col-lg-5.d-none.d-lg-block
-            img(src='@/assets/curso/temas/t3/14.png', alt='')
+            img(src='@/assets/curso/temas/t3/14.png')
   </template>
 
 <script>
@@ -190,7 +190,7 @@ export default {
       // - '&' y '<' y '>' para evitar que el navegador lo interprete como tags
       // - '"' se escapa porque lo usamos en atributos dentro del HTML resaltado
       // - NO escapamos "'" para evitar que se renderice como &#39; visible
-      return str.replace(/[&<>"']/g, ch => {
+      return str.replace(/[&<>"']/g, (ch) => {
         switch (ch) {
           case '&':
             return '&amp;'
@@ -215,7 +215,7 @@ export default {
       // Nota: lo hacemos antes del resto de reemplazos para no afectar otros tokens.
       s = s.replace(
         /(\n\s*body\s*\{[\s\S]*?\}\s*\n\s*canvas\s*\{[\s\S]*?\})/g,
-        m => `<span class="tok-css-block">${m}</span>`,
+        (m) => `<span class="tok-css-block">${m}</span>`,
       )
 
       // DOCTYPE
@@ -244,13 +244,13 @@ export default {
       // Keywords JS (conservador: solo las más comunes del snippet)
       s = s.replace(
         /\b(const|let|var|function|return|if|else|new)\b/g,
-        m => `<span class="tok-js-kw">${m}</span>`,
+        (m) => `<span class="tok-js-kw">${m}</span>`,
       )
 
       // booleanos JS (true/false)
       s = s.replace(
         /\b(true|false)\b/g,
-        m => `<span class="tok-js-bool">${m}</span>`,
+        (m) => `<span class="tok-js-bool">${m}</span>`,
       )
 
       // números (enteros y decimales)
@@ -262,19 +262,19 @@ export default {
       // Métodos/funciones específicas del snippet (para que se vean en azul)
       s = s.replace(
         /\b(getElementById|getContext|dibujarLinea|beginPath|moveTo|lineTo|on|stroke|emit|addEventListener)\b/g,
-        m => `<span class="tok-js-blue">${m}</span>`,
+        (m) => `<span class="tok-js-blue">${m}</span>`,
       )
 
       // Solo io() (cuando se llama como función) en azul
       s = s.replace(
         /\bio(?=\s*\()/g,
-        m => `<span class="tok-js-blue">${m}</span>`,
+        (m) => `<span class="tok-js-blue">${m}</span>`,
       )
 
       // Identificadores específicos del snippet (en naranja)
       s = s.replace(
         /\b(document|x0|y0|x1|y1|color|emitir|datos)\b/g,
-        m => `<span class="tok-js-orange">${m}</span>`,
+        (m) => `<span class="tok-js-orange">${m}</span>`,
       )
 
       return s

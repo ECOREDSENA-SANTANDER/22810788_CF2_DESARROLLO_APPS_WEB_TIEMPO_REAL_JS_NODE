@@ -9,7 +9,7 @@
       
       .row.justify-content-center.mb-5.p-0.align-items-center.bg-color-2(data-aos='fade-right')
         .col-sm-12.col-lg-4.d-none.d-lg-block.p-0
-          img(src='@/assets/curso/temas/t4/1.png', alt='')
+          img(src='@/assets/curso/temas/t4/1.png')
         .col-sm-12.col-lg-8.p-0
           .p-4
             p.mb-3 Construir una aplicación web en tiempo real no es únicamente escribir código correcto, es tomar decisiones técnicas en el orden adecuado. Un desarrollador que salta etapas o que no comprende la secuencia lógica del proceso inevitablemente enfrenta errores difíciles de rastrear, entornos inestables y código difícil de mantener.
@@ -61,7 +61,7 @@
                   td Verificar flujo completo cliente ↔ servidor
                   td Errores silenciosos que solo aparecen con múltiples clientes
         .col-sm-12.col-lg-4.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t4/2.png', alt='')
+          img(src='@/assets/curso/temas/t4/2.png')
       
       p.mb-0(data-aos='fade-right') Cada etapa depende de la anterior. Intentar integrar #[i sockets] sin un servidor HTTP funcional, o construir el cliente antes de definir los eventos del servidor, produce errores de conexión que no indican claramente su origen; el mensaje de error apunta al síntoma, no a la causa.
 
