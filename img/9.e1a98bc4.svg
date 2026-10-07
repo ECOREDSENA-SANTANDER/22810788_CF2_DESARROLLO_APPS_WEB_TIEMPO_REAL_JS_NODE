@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="167" viewBox="0 0 560 167">
+  <text id="javascript_const_PUERTO_3000_servidor.listen_PUERTO_console.log_Pizarra_virtual_ejecutándose_en_http:_localhost:_PUERTO_" data-name="javascript
+
+const PUERTO = 3000;
+servidor.listen(PUERTO, () =&gt; {
+    console.log(`Pizarra virtual ejecutándose en http://localhost:${PUERTO}`);
+});" transform="translate(1)" font-size="16" font-family="Roboto-Regular, Roboto" letter-spacing="0.003em"><tspan x="0" y="17">javascript</tspan><tspan x="0" y="41"></tspan><tspan fill="#e119e8"><tspan x="0" y="65">const</tspan><tspan y="65" fill="#000"> </tspan><tspan y="65" fill="#1597ab">PUERTO</tspan><tspan y="65" xml:space="preserve" fill="#000"> = </tspan><tspan y="65" fill="#1597ab">3000</tspan><tspan y="65" fill="#000">;</tspan></tspan><tspan x="0" y="89">servidor.</tspan><tspan y="89" fill="#2569df">listen</tspan><tspan y="89">(</tspan><tspan y="89" fill="#1597ab">PUERTO</tspan><tspan y="89">, () =&gt; {</tspan><tspan x="0" y="113" xml:space="preserve">    console.</tspan><tspan y="113" fill="#2569df">log</tspan><tspan y="113">(</tspan><tspan y="113" fill="#09a82e">`Pizarra virtual ejecutándose en http://localhost:</tspan><tspan y="113">${</tspan><tspan y="113" fill="#1597ab">PUERTO</tspan><tspan y="113">}`);</tspan><tspan x="0" y="137">});</tspan></text>
+</svg>

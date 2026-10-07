@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="391" height="323" viewBox="0 0 391 323">
+  <g id="Grupo_1204802" data-name="Grupo 1204802" transform="translate(1208.711 9873.989)">
+    <g id="Grupo_1204801" data-name="Grupo 1204801">
+      <text id="javascript_io.on_connection_socket_console.log_Cliente_conectado:_socket.id_socket.on_dibujar_datos_socket.broadcast.emit_dibujar_datos_socket.on_disconnect_console.log_Clie" data-name="javascript
+
+io.on(&apos;connection&apos;, (socket) =&gt; {
+    console.log(`Cliente conectado: ${socket.id}`);
+
+    socket.on(&apos;dibujar&apos;, (datos) =&gt; {
+        socket.broadcast.emit(&apos;dibujar&apos;, datos);
+    });
+
+    socket.on(&apos;disconnect&apos;, () =&gt; {
+        console.log(`Clie" transform="translate(-1207.711 -9873.989)" font-size="16" font-family="Roboto-Regular, Roboto" letter-spacing="0.003em"><tspan x="0" y="17">javascript</tspan><tspan x="0" y="41"></tspan><tspan x="0" y="65">io.</tspan><tspan y="65" fill="#2569df">on</tspan><tspan y="65">(</tspan><tspan y="65" fill="#09a82e">&apos;connection&apos;</tspan><tspan y="65">, (</tspan><tspan y="65" fill="#d98356">socket</tspan><tspan y="65">) =&gt; {</tspan><tspan x="0" y="89" xml:space="preserve">    console.</tspan><tspan y="89" fill="#2569df">log</tspan><tspan y="89">(</tspan><tspan y="89" fill="#09a82e">`Cliente conectado:</tspan><tspan y="89" xml:space="preserve"> ${</tspan><tspan y="89" fill="#09a82e">socket.id</tspan><tspan y="89">}</tspan><tspan y="89" fill="#09a82e">`</tspan><tspan y="89">);</tspan><tspan x="0" y="113"></tspan><tspan x="0" y="137" xml:space="preserve">    socket.</tspan><tspan y="137" fill="#2569df">on</tspan><tspan y="137">(</tspan><tspan y="137" fill="#09a82e">&apos;dibujar&apos;</tspan><tspan y="137">, (</tspan><tspan y="137" fill="#d98356">datos</tspan><tspan y="137">) =&gt; {</tspan><tspan x="0" y="161" xml:space="preserve">        socket.broadcast.</tspan><tspan y="161" fill="#2569df">emit</tspan><tspan y="161">(</tspan><tspan y="161" fill="#09a82e">&apos;dibujar&apos;</tspan><tspan y="161">, datos);</tspan><tspan x="0" y="185" xml:space="preserve">    });</tspan><tspan x="0" y="209"></tspan><tspan x="0" y="233" xml:space="preserve">    socket.</tspan><tspan y="233" fill="#2569df">on</tspan><tspan y="233">(</tspan><tspan y="233" fill="#09a82e">&apos;disconnect&apos;</tspan><tspan y="233">, () =&gt; {</tspan><tspan x="0" y="257" xml:space="preserve">       </tspan><tspan y="257" xml:space="preserve" fill="#d98356"> console</tspan><tspan y="257">.</tspan><tspan y="257" fill="#2569df">log</tspan><tspan y="257">(</tspan><tspan y="257" fill="#09a82e">`Cliente desconectado:</tspan><tspan y="257" xml:space="preserve"> ${</tspan><tspan y="257" fill="#09a82e">socket.id</tspan><tspan y="257">}</tspan><tspan y="257" fill="#09a82e">`</tspan><tspan y="257">);</tspan><tspan x="0" y="281" xml:space="preserve">    });</tspan><tspan x="0" y="305">});</tspan></text>
+    </g>
+  </g>
+</svg>

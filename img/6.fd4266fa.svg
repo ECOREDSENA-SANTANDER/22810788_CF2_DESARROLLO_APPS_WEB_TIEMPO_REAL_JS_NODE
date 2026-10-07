@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="391" height="285" viewBox="0 0 391 285">
+  <g id="Grupo_1204800" data-name="Grupo 1204800" transform="translate(-334 -1840.198)">
+    <g id="Grupo_1204799" data-name="Grupo 1204799" transform="translate(0 28.9)">
+      <text id="javascript_const_express_require_express_const_http_require_http_const_Server_require_socket.io_const_path_require_path_const_app_express_const_servidor_http.createServer_app_const_io_new_Server_servidor_app.use" data-name="javascript
+
+const express = require(&apos;express&apos;);
+const http = require(&apos;http&apos;);
+const { Server } = require(&apos;socket.io&apos;);
+const path = require(&apos;path&apos;); 
+
+const app = express();
+const servidor = http.createServer(app);
+const io = new Server(servidor);
+
+app.use" transform="translate(335 1811.298)" font-size="16" font-family="Roboto-Regular, Roboto" letter-spacing="0.003em"><tspan x="0" y="17">javascript</tspan><tspan x="0" y="41"></tspan><tspan fill="#e119e8"><tspan x="0" y="65">const</tspan><tspan y="65" xml:space="preserve" fill="#000"> express = </tspan><tspan y="65" fill="#2569df">require</tspan><tspan y="65" fill="#000">(</tspan><tspan y="65" fill="#09a82e">&apos;express&apos;</tspan><tspan y="65" fill="#000">);</tspan><tspan x="0" y="89">const</tspan><tspan y="89" xml:space="preserve" fill="#000"> http = </tspan><tspan y="89" fill="#2569df">require</tspan><tspan y="89" fill="#000">(</tspan><tspan y="89" fill="#09a82e">&apos;http&apos;</tspan><tspan y="89" fill="#000">);</tspan><tspan x="0" y="113">const</tspan><tspan y="113" xml:space="preserve" fill="#000"> { </tspan><tspan y="113" fill="#d98356">Server</tspan><tspan y="113" xml:space="preserve" fill="#000"> } =</tspan><tspan y="113" xml:space="preserve" fill="#2569df"> require</tspan><tspan y="113" fill="#000">(</tspan><tspan y="113" fill="#09a82e">&apos;socket.io&apos;</tspan><tspan y="113" fill="#000">);</tspan><tspan x="0" y="137">const</tspan><tspan y="137" xml:space="preserve" fill="#000"> path = </tspan><tspan y="137" fill="#2569df">require</tspan><tspan y="137" fill="#000">(</tspan><tspan y="137" fill="#09a82e">&apos;path&apos;</tspan><tspan y="137" fill="#000">); </tspan></tspan><tspan x="0" y="161"></tspan><tspan fill="#e119e8"><tspan x="0" y="185">const</tspan><tspan y="185" xml:space="preserve" fill="#000"> app = </tspan><tspan y="185" fill="#2569df">express</tspan><tspan y="185" fill="#000">();</tspan><tspan x="0" y="209">const</tspan><tspan y="209" xml:space="preserve" fill="#000"> servidor = http.</tspan><tspan y="209" fill="#2569df">createServer</tspan><tspan y="209" fill="#000">(app);</tspan><tspan x="0" y="233">const</tspan><tspan y="233" xml:space="preserve" fill="#000"> io = </tspan><tspan y="233">new</tspan><tspan y="233" xml:space="preserve" fill="#d98356"> Server</tspan><tspan y="233" fill="#000">(servidor);</tspan></tspan><tspan x="0" y="257"></tspan><tspan x="0" y="281">app.</tspan><tspan y="281" fill="#2569df">use</tspan><tspan y="281">(express.</tspan><tspan y="281" fill="#2569df">static</tspan><tspan y="281">(path.</tspan><tspan y="281" fill="#2569df">join</tspan><tspan y="281">(__dirname,</tspan><tspan y="281" xml:space="preserve" fill="#09a82e"> &apos;public&apos;</tspan><tspan y="281">)));</tspan></text>
+    </g>
+  </g>
+</svg>
