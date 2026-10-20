@@ -9,12 +9,12 @@
 
       .row.justify-content-center.mb-5.p-0.align-items-center.bg-color-2(data-aos='fade-right')
         .col-sm-12.col-lg-4.d-none.d-lg-block.p-0
-          img(src='@/assets/curso/temas/t2/1.png', alt='')
+          img(src='@/assets/curso/temas/t2/1.png')
         .col-sm-12.col-lg-8.p-0
           .p-4
             .row.justify-content-center.mb-0
               .col-sm-12.col-lg-2.d-none.d-lg-block
-                img(src='@/assets/curso/temas/t2/2.svg', alt='')
+                img(src='@/assets/curso/temas/t2/2.svg')
               .col-sm-12.col-lg-8
                   p.mb-0 Con el entorno configurado y las dependencias instaladas, el siguiente paso es levantar el servidor, la columna estructural de toda aplicación web en tiempo real. El servidor es el ente que permanece activo, escucha las peticiones de los clientes y coordina el flujo de información entre ellos.
 
@@ -26,7 +26,7 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 Arquitectura básica de un servidor Node.js con Express
 
@@ -48,9 +48,9 @@
                 p.mb-4 bash
                 .mb-0.d-flex #[.text-cus-3 npm install]&nbsp;express socket.io
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img(src='@/assets/curso/temas/t2/5.svg', alt='')
+                img(src='@/assets/curso/temas/t2/5.svg')
         .col-sm-12.col-lg-6.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t2/4.png', alt='')
+          img(src='@/assets/curso/temas/t2/4.png')
 
       p.mb-5(data-aos='fade-right') A continuación, se crea el archivo #[b.text-cus-7 index.js], el punto de entrada de la aplicación:
 
@@ -69,7 +69,7 @@
                       .mb-1.d-flex #[.text-cus-4 const] &nbsp; express =   &nbsp;#[.text-cus-3 require]('#[.text-cus-2  express]');
                       .mb-0.d-flex #[.text-cus-4 const] &nbsp; http =  &nbsp; #[.text-cus-3 require]('#[.text-cus-2  http]');
                   .col-sm-12.col-lg-5.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/6.png', alt='')
+                    img(src='@/assets/curso/temas/t2/6.png')
 
             .row.ml-cus-4(titulo="")
               .col-sm-12.col-lg-12
@@ -82,7 +82,7 @@
                       .mb-0.d-flex #[.text-cus-4 const] &nbsp; app =   &nbsp;#[.text-cus-3 express]();
                       .mb-0.d-flex.no-wrap.text-cus-8  #[.text-cus-4 const]&nbsp;servidor = http.#[.text-cus-3 createServer](app);
                   .col-sm-12.col-lg-4.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/7.png', alt='')
+                    img(src='@/assets/curso/temas/t2/7.png')
 
             .row.ml-cus-4(titulo="")
               .col-sm-12.col-lg-12
@@ -96,7 +96,7 @@
                       .mb-1.d-flex.ml-cus-5.no-wrap.text-cus-8    res.#[.text-cus-3 send]('#[.text-cus-2 Servidor en línea y esperando conexiones.]');
                       .mb-0.d-flex.text-cus-8  });
                   .col-sm-12.col-xl-5.d-none.d-xl-block
-                    img(src='@/assets/curso/temas/t2/8.png', alt='')
+                    img(src='@/assets/curso/temas/t2/8.png')
 
 
             .row.ml-cus-4(titulo="")
@@ -106,15 +106,17 @@
                 .row.justify-content-center.mb-5
                   .col-sm-12.col-lg-9
                     .cajon.color-acento-contenido.p-4.overflow-auto.w-cus-4
-                        pre(style="white-space: pre;").mb-0
-                          code.language-JavaScript.d-flex.flex-column.mb-0.text-cus-9
+                        pre.mb-0
+                          code.language-JavaScript
                             | javascript
-                            | #[.d-flex #[.text-cus-4 const]&nbsp;#[.text-cus-6 PUERTO] = #[.text-cus-6 3000];]
-                            | #[.d-flex servidor.#[.text-cus-3 listen](`#[.text-cus-6 PUERTO]`, () => {]
-                            | #[.d-flex.ml-cus-5 #[.text-cus-5 console].#[.text-cus-3 log](`#[.text-cus-2 Servidor ejecutándose en http://localhost]:${#[.text-cus-6 PUERTO]}`);]
-                            | #[.d-flex }); ]
+                            | &nbsp;
+                            | const PUERTO = 3000; 
+                            | servidor.listen(PUERTO, () => { 
+                            |   console.log(`Servidor ejecutándose en http://localhost:${PUERTO}`); 
+                            | });
+    
                   .col-sm-12.col-lg-3.d-none.d-lg-block
-                    img(src='@/assets/curso/temas/t2/9.png', alt='')
+                    img(src='@/assets/curso/temas/t2/9.png')
 
 
 
@@ -182,7 +184,7 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 El proceso de conexión                   
       
@@ -191,21 +193,21 @@
           LineaTiempoE.color-acento-botones
             .row(titulo="Momento 1")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/13.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/13.svg')
               .col-sm-12.col-lg-9
                 h3 La petición inicial 
                 p.mb-0 El navegador realiza una petición HTTP normal, pero incluye una cabecera especial solicitando un #[i upgrade] (mejora de conexión). Es como solicitar pasar de una carta postal a una llamada telefónica directa.
                                    
             .row(titulo="Momento 2")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/14.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/14.svg')
               .col-sm-12.col-lg-9
                 h3 La aceptación del servidor  
                 p.mb-0 Si el servidor está configurado para WebSockets, acepta la solicitud y confirma el #[i upgrade]. A partir de este instante la conexión HTTP se transforma en un túnel TCP abierto de forma permanente.
             
             .row(titulo="Momento 3")
               .col-sm-12.col-lg-3.d-none.d-lg-block
-                img.w-75(src='@/assets/curso/temas/t2/15.svg', alt='')
+                img.w-75(src='@/assets/curso/temas/t2/15.svg')
               .col-sm-12.col-lg-9
                 h3 El canal activo 
                 p.mb-0 El canal queda abierto indefinidamente. El servidor adquiere la capacidad de enviar (#[i push]) datos al cliente en el momento exacto en que ocurren, sin que el cliente tenga que preguntar. Este es el principio de la comunicación en tiempo real.
@@ -218,44 +220,44 @@
 
       .row.align-items-center.mb-5.titulo-icono(data-aos='fade-right')
         .col-auto.titulo-icono-img
-          img(src='@/assets/curso/temas/bg/1.svg', alt='')
+          img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 Integración de #[i sockets] al servidor                   
       p.mb-3(data-aos='fade-right') Se modifica el archivo #[b.text-cus-7 index.js] para agregar la capa de WebSockets mediante socket.io.
       p.mb-5(data-aos='fade-right') A continuación, se describe el análisis crítico de cada bloque:
-      .cajon.color-primario.p-5.mb-5(data-aos='fade-right')
+      .cajon.color-primario.p-4.mb-5(data-aos='fade-right')
         .row.justify-content-center.mb-0
-          .col-sm-12.col-lg-8.col-xl-7
-              pre(style="white-space: pre;").mb-0
-                code.language-JavaScript.d-flex.flex-column.mb-0.text-cus-9
-                  | #[.mb-3.d-flex javascript]
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp; express = &nbsp;#[.text-cus-3 require]('#[.text-cus-2 express]');]
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp; http = &nbsp;#[.text-cus-3 require]('#[.text-cus-2 http]');]
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp;{&nbsp; #[.text-cus-5 Server]&nbsp; } = &nbsp;#[.text-cus-3 require]('#[.text-cus-2 socket.io]');]
-
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp; app = &nbsp;#[.text-cus-3 express]();]
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp; servidor = http.&nbsp;#[.text-cus-3 createServer](app);]
-                  | #[.mb-1.d-flex #[.text-cus-4 const] &nbsp; io = &nbsp;#[.text-cus-4 new]&nbsp; #[.text-cus-5 Server](servidor);]
-
-                  | #[.mb-1.d-flex io.#[.text-cus-3 on]('#[.text-cus-2 connection]', (#[.text-cus-5 socket]) => {]
-                  | #[.mb-3.d-flex.ml-cus-5 #[.text-cus-5 console].#[.text-cus-3 log](`#[.text-cus-2 Nueva conexión establecida. ID]: ${#[.text-cus-2 socket.id]}`);]
-
-                  | #[.mb-1.d-flex.ml-cus-5 socket.#[.text-cus-3 on]('#[.text-cus-2 mensaje_chat]', (#[.text-cus-5 datos]) => {]
-                  | #[.mb-1.d-flex.ml-cus-6 #[.text-cus-5 console].#[.text-cus-3 log]('#[.text-cus-2 Mensaje recibido:]', datos);]
-                  | #[.mb-1.d-flex.ml-cus-6 io.#[.text-cus-3 emit]('#[.text-cus-2 mensaje_chat]', datos);]
-                  | #[.mb-3.d-flex.ml-cus-5    });]
-
-                  | #[.mb-1.d-flex.ml-cus-5 socket.#[.text-cus-3 on]('#[.text-cus-2 disconnect]', () => {]
-                  | #[.mb-1.d-flex.ml-cus-6         #[.text-cus-5 console].#[.text-cus-3 log](`#[.text-cus-2 Conexión cerrada. ID:] ${#[.text-cus-2 socket.id]}`);]
-                  | #[.mb-1.d-flex.ml-cus-5 });]
-                  | #[.mb-1.d-flex });]
-
-                  | #[.mb-1.d-flex servidor.#[.text-cus-3 listen](#[.text-cus-6 3000], () => {]
-                  | #[.mb-1.d-flex.ml-cus-5    #[.text-cus-5 console].#[.text-cus-3 log](`#[.text-cus-2 Servidor con sockets ejecutándose en el puerto 3000.]`);]
-                  | #[.mb-1.d-flex });]
+          .col-sm-12.col-lg-8.col-xl-8
+              pre.mb-0
+                code.language-JavaScript
+                  | const express = require('express');
+                  | const http = require('http');
+                  | const { Server } = require('socket.io');
+                  |
+                  | const app = express();
+                  | const servidor = http.createServer(app);
+                  | const io = new Server(servidor);
+                  |
+                  | io.on('connection', (socket) => {
+                  |   console.log(`Nueva conexión establecida. ID: ${socket.id}`);
+                  |
+                  |   socket.on('mensaje_chat', (datos) => {
+                  |     console.log('Mensaje recibido:', datos);
+                  |     io.emit('mensaje_chat', datos);
+                  |   });
+                  |
+                  |   socket.on('disconnect', () => {
+                  |     console.log(`Conexión cerrada. ID: ${socket.id}`);
+                  |   });
+                  | });
+                  |
+                  | servidor.listen(3000, () => {
+                  |   console.log('Servidor con sockets ejecutándose en el puerto 3000.');
+                  | });
+                  
            
-          .col-sm-12.col-lg-4.col-xl-5.d-none.d-lg-block
-            img(src='@/assets/curso/temas/t2/11.png', alt='')
+          .col-sm-12.col-lg-4.col-xl-4.d-none.d-lg-block
+            img(src='@/assets/curso/temas/t2/11.png')
       
 
 
@@ -285,7 +287,7 @@
       p.mb-5(data-aos='fade-right') Elegir incorrectamente entre estas cuatro opciones produce errores de lógica difíciles de detectar: mensajes que no llegan, mensajes duplicados o usuarios que reciben información que no les corresponde.    
 
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-        p.mb-0  #[b Tabla 2.] Métodos de emisión en socket.io y alcance por destinatario
+        p.mb-0  #[b Tabla 2.] Métodos de emisión en Socket.IO y alcance por destinatario
       .row.justify-content-center.mb-5
         .col-sm-12.col-lg-8
           .tabla-a.color-acento-contenido.mb-5
@@ -297,23 +299,26 @@
                 tbody
                   tr
                     td.text-cus-7.fw-bold socket.emit()
-                    td Solo al emisor
+                    td Solo al emisor.
                   tr
                     td.text-cus-7.fw-bold socket.on()
-                    td Escucha eventos de un cliente específico
+                    td Escucha eventos de un cliente específico.
                   tr
                     td.text-cus-7.fw-bold socket.broadcast.emit()
-                    td A todos los clientes conectados excepto al emisor
+                    td A todos los clientes conectados excepto al emisor.
                   tr
                     td.text-cus-7.fw-bold io.emit()
-                    td A todos los clientes conectados sin excepción
+                    td A todos los clientes conectados sin excepción.
         .col-sm-12.col-lg-4.d-none.d-lg-block
-          img(src='@/assets/curso/temas/t2/12.png', alt='')
+          img(src='@/assets/curso/temas/t2/12.png')
       
            
   </template>
 
 <script>
+import Prism from 'prismjs'
+import 'prismjs/themes/prism.css'
+import 'prismjs/components/prism-javascript'
 export default {
   name: 'Tema1',
   data: () => ({
@@ -323,9 +328,11 @@ export default {
     this.$nextTick(() => {
       this.$aosRefresh()
     })
+    Prism.highlightAllUnder(this.$el)
   },
   updated() {
     this.$aosRefresh()
+    Prism.highlightAllUnder(this.$el)
   },
 }
 </script>

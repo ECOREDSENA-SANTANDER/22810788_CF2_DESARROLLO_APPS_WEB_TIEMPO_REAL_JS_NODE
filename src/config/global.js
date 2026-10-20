@@ -157,7 +157,7 @@ export default {
     {
       termino: '<em>Broadcast</em>',
       significado:
-        'método de transmisión en socket.io mediante el cual el servidor envía un evento a todos los clientes conectados simultáneamente, con excepción del emisor original. Se implementa con socket.broadcast.emit().',
+        'método de transmisión en Socket.IO mediante el cual el servidor envía un evento a todos los clientes conectados simultáneamente, con excepción del emisor original. Se implementa con socket.broadcast.emit().',
     },
     {
       termino: 'Dependencia',
@@ -167,25 +167,25 @@ export default {
     {
       termino: 'Electron',
       significado:
-        'marco de trabajo de código abierto que permite desarrollar aplicaciones de escritorio multiplataforma usando tecnologías web (html, css y javascript). Visual Studio Code está construido sobre Electron, lo que explica su comportamiento idéntico en Windows, MacOS y Linux.',
+        'marco de trabajo de código abierto que permite desarrollar aplicaciones de escritorio multiplataforma usando tecnologías web (<i>html, css y javascript</i>). Visual Studio Code está construido sobre Electron, lo que explica su comportamiento idéntico en Windows, MacOS y Linux.',
     },
     {
-      termino: '<em>Event loop</em> (Bucle de Eventos)',
+      termino: '<em>Event loop</em> (bucle de eventos)',
       significado:
         'mecanismo interno de Node.js que permite ejecutar operaciones de entrada/salida de forma no bloqueante. En lugar de esperar a que una tarea pesada termine, delega su ejecución al sistema operativo y continúa procesando otras solicitudes, lo que posibilita alta concurrencia en un solo hilo.',
     },
     {
       termino: 'Express',
       significado:
-        'marco de trabajo minimalista para Node.js que simplifica la creación de servidores HTTP, la definición de rutas y el manejo de peticiones y respuestas. Es el estándar de la industria para construir el servidor base sobre el que se integran capas adicionales como socket.io.',
+        'marco de trabajo minimalista para Node.js que simplifica la creación de servidores HTTP, la definición de rutas y el manejo de peticiones y respuestas. Es el estándar de la industria para construir el servidor base sobre el que se integran capas adicionales como Socket.IO.',
     },
     {
       termino: '<em>Full-duplex</em>',
       significado:
-        'característica de un canal de comunicación que permite enviar y recibir datos simultáneamente en ambas direcciones sin interrupciones. Es la propiedad fundamental de los websockets que los distingue del protocolo HTTP tradicional, donde solo el cliente puede iniciar la comunicación.',
+        'característica de un canal de comunicación que permite enviar y recibir datos simultáneamente en ambas direcciones sin interrupciones. Es la propiedad fundamental de los Websockets que los distingue del protocolo HTTP tradicional, donde solo el cliente puede iniciar la comunicación.',
     },
     {
-      termino: '<em>Handshake</em> (Negociación Inicial)',
+      termino: '<em>Handshake</em> (negociación inicial)',
       significado:
         'proceso automatizado entre cliente y servidor para establecer los parámetros de una conexión WebSocket. El cliente envía una petición HTTP con cabecera de <em>upgrade</em> y, si el servidor la acepta, la conexión HTTP se transforma en un canal TCP persistente y bidireccional.',
     },
@@ -228,27 +228,26 @@ export default {
   referencias: [
     {
       referencia:
-        "Brown, E. (2020). Web development with Node and Express: Leveraging the JavaScript stack (2.ª ed.). O'Reilly Media.",
+        "Brown, E. (2019). Web development with Node and Express: Leveraging the JavaScript stack (2.ª ed.). O'Reilly Media.",
     },
     {
       referencia: 'MDN Web Docs. (2023). Canvas API. Mozilla Foundation.',
     },
     {
-      referencia: 'MDN Web Docs. (2023). WebSockets API. Mozilla Foundation.',
+      referencia: 'MDN Web Docs. (2024). WebSockets API. Mozilla Foundation.',
     },
     {
       referencia:
         'Microsoft. (2024). Node.js tutorial in Visual Studio Code. Microsoft.',
     },
     {
-      referencia:
-        'Node.js Foundation. (2024). Introduction to Node.js. OpenJS Foundation.',
+      referencia: 'Node.js. (s. f.). Introduction to Node.js.',
     },
     {
-      referencia: 'Npm. (2024). About npm. npm, Inc.',
+      referencia: 'npm. (2023). About npm.',
     },
     {
-      referencia: 'Socket.IO. (2024). Introduction to Socket.IO. Socket.IO.',
+      referencia: 'Socket.IO. (2026).',
     },
   ],
   creditos: [
@@ -257,7 +256,8 @@ export default {
       autores: [
         {
           nombre: 'Claudia Johanna Gómez Pérez',
-          cargo: 'Responsable del ecosistema',
+          cargo:
+            'Profesional G06. Responsable Ecosistema Virtual de Recursos Educativos Digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
@@ -306,12 +306,12 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Erika Daniela Manrique Rueda',
+          nombre: 'Laura Paola Gelvez Manosalva',
           cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: '--',
+          nombre: 'Sandra Liliana Cristancho Cruz',
           cargo: 'Evaluadora de contenidos inclusivos y accesibles',
           centro: 'Centro Agroturístico - Regional Santander',
         },
