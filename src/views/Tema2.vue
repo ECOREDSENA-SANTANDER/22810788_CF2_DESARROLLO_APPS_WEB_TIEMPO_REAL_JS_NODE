@@ -223,7 +223,7 @@
           img(src='@/assets/curso/temas/bg/1.svg')
         .col
           h3.mb-0.titulo-icono-text.px-0.py-2 Integración de #[i sockets] al servidor                   
-      p.mb-3(data-aos='fade-right') Se modifica el archivo #[b.text-cus-7 index.js] para agregar la capa de WebSockets mediante socket.io.
+      p.mb-3(data-aos='fade-right') Se modifica el archivo #[b.text-cus-7 index.js] para agregar la capa de WebSockets mediante Socket.IO.
       p.mb-5(data-aos='fade-right') A continuación, se describe el análisis crítico de cada bloque:
       .cajon.color-primario.p-4.mb-5(data-aos='fade-right')
         .row.justify-content-center.mb-0

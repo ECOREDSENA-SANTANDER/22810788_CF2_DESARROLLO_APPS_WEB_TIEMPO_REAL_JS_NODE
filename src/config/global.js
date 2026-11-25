@@ -167,7 +167,7 @@ export default {
     {
       termino: 'Electron',
       significado:
-        'marco de trabajo de código abierto que permite desarrollar aplicaciones de escritorio multiplataforma usando tecnologías web (<i>html, css y javascript</i>). Visual Studio Code está construido sobre Electron, lo que explica su comportamiento idéntico en Windows, MacOS y Linux.',
+        'marco de trabajo de código abierto que permite desarrollar aplicaciones de escritorio multiplataforma usando tecnologías web (<i>HTML, CSS y JavaScript)</i>). Visual Studio Code está construido sobre Electron, lo que explica su comportamiento idéntico en Windows, MacOS y Linux.',
     },
     {
       termino: '<em>Event loop</em> (bucle de eventos)',
@@ -182,7 +182,7 @@ export default {
     {
       termino: '<em>Full-duplex</em>',
       significado:
-        'característica de un canal de comunicación que permite enviar y recibir datos simultáneamente en ambas direcciones sin interrupciones. Es la propiedad fundamental de los Websockets que los distingue del protocolo HTTP tradicional, donde solo el cliente puede iniciar la comunicación.',
+        'característica de un canal de comunicación que permite enviar y recibir datos simultáneamente en ambas direcciones sin interrupciones. Es la propiedad fundamental de los WebSockets que los distingue del protocolo HTTP tradicional, donde solo el cliente puede iniciar la comunicación.',
     },
     {
       termino: '<em>Handshake</em> (negociación inicial)',
@@ -234,7 +234,8 @@ export default {
       referencia: 'MDN Web Docs. (2023). Canvas API. Mozilla Foundation.',
     },
     {
-      referencia: 'MDN Web Docs. (2024). WebSockets API. Mozilla Foundation.',
+      referencia:
+        'MDN Web Docs. (2024). WebSocket API (WebSockets). Mozilla Foundation.',
     },
     {
       referencia:
@@ -247,7 +248,7 @@ export default {
       referencia: 'npm. (2023). About npm.',
     },
     {
-      referencia: 'Socket.IO. (2026).',
+      referencia: 'Socket.IO. (2026). Introduction.',
     },
   ],
   creditos: [
@@ -306,7 +307,7 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Laura Paola Gelvez Manosalva',
+          nombre: 'Erika Daniela Manrique Rueda',
           cargo: 'Validadora y vinculadora de recursos educativos digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
